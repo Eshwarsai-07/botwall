@@ -1,9 +1,25 @@
 {
   "name": "botwall-agent-sdk",
   "version": "0.1.1",
-  "description": "Drop-in client SDK for AI agents that need to pay HTTP 402 paywalls. Handles x402 challenges, USDC settlement on Solana, retries, and safety guards automatically.",
+  "description": "Drop-in HTTP 402 paywall client for AI agents. Auto-handles x402 challenges, USDC SPL settlement on Solana, retries, budget caps, and safety guards. Works with LangChain, OpenAI tools, and any fetch-based stack.",
   "type": "module",
   "license": "MIT",
+  "author": {
+    "name": "Eshwarsai",
+    "url": "https://github.com/Eshwarsai-07"
+  },
+  "homepage": "https://botwall-ebon.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eshwarsai-07/botwall.git",
+    "directory": "packages/botwall-agent-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/Eshwarsai-07/botwall/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   },
@@ -22,13 +38,16 @@
     "ai-agent",
     "paywall",
     "x402",
+    "http-402",
     "solana",
     "usdc",
-    "http-402",
     "fetch",
     "langchain",
     "openai-tools",
-    "monetization"
+    "monetization",
+    "micropayments",
+    "botwall",
+    "autonomous-agent"
   ],
   "scripts": {
     "lint": "node --check src/index.js && node --check src/core/client.js && node --check src/core/payment.js && node --check src/core/signer.js && node --check src/core/guards.js && node --check src/core/spendTracker.js && node --check src/core/errors.js && node --check src/tools/langchain.js"

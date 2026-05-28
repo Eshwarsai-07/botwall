@@ -2,6 +2,8 @@
 
 This guide covers everything an AI agent builder needs: installing the SDK, configuring a signer, handling payments automatically, setting budget limits, integrating with LangChain, and handling errors.
 
+**Live links:** [Landing page](https://botwall-ebon.vercel.app/) · [npm: botwall-agent-sdk](https://www.npmjs.com/package/botwall-agent-sdk) · [Backend API](https://botwall-production.up.railway.app) · [Test endpoint](https://botwall-production.up.railway.app/articles/test)
+
 ---
 
 ## How it works in one paragraph

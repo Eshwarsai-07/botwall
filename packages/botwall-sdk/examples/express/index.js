@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 4000;
 const paywall = createPaywall({
   walletAddress: process.env.SOLANA_WALLET_ADDRESS,
   network: process.env.SOLANA_NETWORK || "devnet",
-  apiUrl: process.env.BOTWALL_URL || "http://localhost:3000",
+  // apiUrl defaults to https://botwall-production.up.railway.app
+  // Override with BOTWALL_URL=http://localhost:3000 for local dev
+  apiUrl: process.env.BOTWALL_URL,
   protect: ["/articles/*"],
   basePriceMicroUsdc: 1_000,
   failOpen: false,

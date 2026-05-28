@@ -2,8 +2,20 @@
   "name": "botwall",
   "version": "1.0.0",
   "type": "module",
-  "description": "Botwall using HTTP 402 and Solana payments",
+  "description": "HTTP 402 paywall for AI agents — enforce USDC micropayments on Solana for bot content access. Includes the facilitator server, publisher SDK, agent SDK, and landing page.",
   "main": "server/index.js",
+  "author": {
+    "name": "Eshwarsai",
+    "url": "https://github.com/Eshwarsai-07"
+  },
+  "homepage": "https://botwall-ebon.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eshwarsai-07/botwall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eshwarsai-07/botwall/issues"
+  },
   "scripts": {
     "start": "node server/index.js",
     "test:ai": "node test/simulate.js",
@@ -14,7 +26,14 @@
     "ai",
     "paywall",
     "solana",
-    "402"
+    "usdc",
+    "http-402",
+    "x402",
+    "bot-detection",
+    "micropayments",
+    "botwall",
+    "express",
+    "autonomous-agent"
   ],
   "license": "MIT",
   "dependencies": {

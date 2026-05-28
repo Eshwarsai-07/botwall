@@ -1,9 +1,25 @@
 {
   "name": "botwall-sdk",
   "version": "0.2.1",
-  "description": "Drop-in AI bot paywall, fully wallet-based: provide your Solana wallet, receive USDC directly. No API keys. Local bot detection + stateless x402 facilitator. Works with Express, Next.js, Fastify, and Cloudflare Workers.",
+  "description": "Drop-in AI bot paywall for Node.js — wallet-based HTTP 402 enforcement with USDC micropayments on Solana. Works with Express, Next.js, Fastify, and Cloudflare Workers. No API keys.",
   "type": "module",
   "license": "MIT",
+  "author": {
+    "name": "Eshwarsai",
+    "url": "https://github.com/Eshwarsai-07"
+  },
+  "homepage": "https://botwall-ebon.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eshwarsai-07/botwall.git",
+    "directory": "packages/botwall-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/Eshwarsai-07/botwall/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   },
@@ -23,13 +39,17 @@
     "ai",
     "paywall",
     "x402",
+    "http-402",
     "solana",
+    "usdc",
     "bot-detection",
     "express",
     "nextjs",
     "fastify",
     "cloudflare-workers",
-    "monetization"
+    "monetization",
+    "micropayments",
+    "botwall"
   ],
   "scripts": {
     "lint": "node --check src/index.js"

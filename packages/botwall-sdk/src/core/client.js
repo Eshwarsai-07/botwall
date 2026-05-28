@@ -9,7 +9,7 @@
  *   POST {apiUrl}/v1/verify
  */
 
-const DEFAULT_API_URL = "https://botwall-production-f453.up.railway.app";
+const DEFAULT_API_URL = "https://botwall-production.up.railway.app";
 
 export class BotwallClient {
   constructor({ walletAddress, network, usdcMint, apiUrl, fetchImpl, timeoutMs = 8000 }) {

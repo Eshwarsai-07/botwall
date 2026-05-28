@@ -2,6 +2,8 @@
 
 This guide covers everything a website owner needs: installing the SDK, gating content, configuring pricing, and accessing your payment dashboard.
 
+**Live links:** [Landing page](https://botwall-ebon.vercel.app/) · [npm: botwall-sdk](https://www.npmjs.com/package/botwall-sdk) · [Backend API](https://botwall-production.up.railway.app) · [Dashboard](https://botwall-production.up.railway.app/dashboard)
+
 ---
 
 ## How it works in one paragraph
@@ -230,7 +232,7 @@ The dashboard is at `/dashboard` (served by the backend). Authentication uses Si
 
 ### Using the hosted UI
 
-1. Open your backend URL + `/dashboard`
+1. Open the [live dashboard](https://botwall-production.up.railway.app/dashboard)
 2. Click **Connect Wallet**
 3. Sign the message in Phantom, Backpack, or any Solana wallet
 4. You'll see payments scoped to your wallet — transaction signatures, bot names, paths, amounts, timestamps

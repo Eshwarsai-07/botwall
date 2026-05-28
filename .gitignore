@@ -27,6 +27,6 @@ crawlpay.db-wal
 test/payer-keypair.json
 test/treasury-keypair.json
 
-README.md
+
 .pnpm-store/
 .vscode/
