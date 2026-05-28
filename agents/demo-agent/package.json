@@ -1,0 +1,21 @@
+{
+  "name": "demo-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "axios": "^1.16.1",
+    "botwall-agent-sdk": "file:../../packages/botwall-agent-sdk",
+    "bs58": "^6.0.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^17.4.2"
+  }
+}
