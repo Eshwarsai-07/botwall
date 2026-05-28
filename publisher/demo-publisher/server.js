@@ -6,6 +6,8 @@ const cors = require("cors");
 const freeRoutes = require("./routes/free");
 const premiumRoutes = require("./routes/premium");
 const verifyRoutes = require("./routes/verify");
+const statsRoutes =
+  require("./routes/stats");
 
 const app = express();
 
@@ -19,6 +21,7 @@ app.get("/", (req, res) => {
   });
 });
 
+app.use("/stats", statsRoutes);
 app.use("/free", freeRoutes);
 app.use("/premium", premiumRoutes);
 app.use("/verify", verifyRoutes);

@@ -1,4 +1,6 @@
 const express = require("express");
+const supabase =
+  require("../lib/supabase");
 
 const {
   Connection,
@@ -47,6 +49,21 @@ router.post("/", async (req, res) => {
         error: "transaction_not_found",
       });
     }
+
+    await supabase
+    .from("payments")
+    .insert([
+      {
+        tx: signature,
+        wallet_address:
+          process.env.RECEIVER_WALLET,
+        network: "solana-devnet",
+        bot_name: "GPTBot",
+        user_agent: "GPTBot/1.0",
+        path: "/premium/ai-future",
+        lamports: 1000000,
+      },
+    ]);
 
     return res.json({
       verified: true,
