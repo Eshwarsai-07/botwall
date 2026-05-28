@@ -401,7 +401,3 @@ Score ≥ threshold → HTTP 402 with x402 envelope. Humans pass through without
 - [Live API](https://botwall-production.up.railway.app)
 
 ---
-
-## License
-
-MIT
