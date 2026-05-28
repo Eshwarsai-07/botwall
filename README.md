@@ -22,6 +22,12 @@ Botwall makes AI agent content access **enforceable at the protocol layer**. Pub
 | 📖 Publisher docs | [docs/PUBLISHER.md](docs/PUBLISHER.md) |
 | 📖 Agent docs | [docs/AGENT.md](docs/AGENT.md) |
 
+## Demo
+
+https://github.com/user-attachments/assets/Botwall-demo.mov
+
+> **Full flow:** AI bot hits a protected route → receives HTTP 402 → pays USDC on Solana → retries → content unlocked.
+
 ---
 
 ## What this solves
