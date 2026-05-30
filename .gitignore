@@ -30,3 +30,5 @@ test/treasury-keypair.json
 
 .pnpm-store/
 .vscode/
+.npm/
+npm_cache/
